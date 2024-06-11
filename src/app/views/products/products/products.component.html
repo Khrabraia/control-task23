@@ -1,0 +1,10 @@
+<div class="container text-center">
+  <h2 class="fs-2 fw-bold my-5">Наши чайные коллекции</h2>
+</div>
+
+<section class="container mt-5">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 g-lg-4">
+    <product-card *ngFor="let product of products" [product]="product"></product-card>
+  </div>
+</section>
+

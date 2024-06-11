@@ -1,0 +1,14 @@
+<div class="container text-center">
+  <h2 class="fs-2 fw-bold my-5">Чай {{product.title}}</h2>
+</div>
+
+<section class="container mt-5 d-flex flex-column align-items-center">
+  <div class="product-image mb-2">
+    <img src="{{product.image}}" class="w-100"  alt="Image">
+  </div>
+
+  <div class="mb-2 fw-bold">Цена: {{product.price}} рублей</div>
+  <div class="mb-4">Описание: {{product.description}}</div>
+  <a class="btn btn-primary px-5 mb-1" routerLink="/order" [queryParams]="{product: product.title}">Купить</a>
+
+</section>
